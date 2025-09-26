@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <div class="navbar" id="navbar">
+        <h1 class="title">PDF Viewer</h1>
+        <button id="scrollBtn" class="scrollBtn">
+            <!-- أيقونة SVG داخل الزر -->
+            <svg xmlns="file:///C:/Users/dell/Downloads/download.svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                <path d="M12 21l-12-18h24z"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- الجسم الصغير -->
+    <div class="smallBody">
+        <!-- زر إضافة ملفات -->
+        <button id="browseBtn" class="button">
+            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" class="svg-icon">
+                <g clip-rule="evenodd" fill-rule="evenodd" stroke="#056dfa" stroke-linecap="round" stroke-width="2">
+                    <path d="m3 7h17c.5523 0 1 .44772 1 1v11c0 .5523-.4477 1-1 1h-16c-.55228 0-1-.4477-1-1z"></path>
+                    <path d="m3 4.5c0-.27614.22386-.5.5-.5h6.29289c.13261 0 .25981.05268.35351.14645l2.8536 2.85355h-10z"></path>
+                </g>
+            </svg>
+            <span class="label">ADD</span>
+        </button>
+
+        <!-- إدخال الملفات -->
+        <input type="file" id="fileInput" accept="application/pdf" style="display: none;" multiple />
+
+        <!-- مكتبة الملفات -->
+        <legend>
+            <h1 class="libraryTitle">My Library</h1>
+        </legend>
+        <ul id="fileList"></ul>
+    </div>
+
+    <!-- الفوتر -->
+    <footer id="section2" class="foter">
+        <p>This page made by Abdullah</p>
+        <a class="Telegram" href="https://t.me/+9AibvsjwPFwzMGI0">
+            <h1>Telegram</h1>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
